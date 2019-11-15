@@ -7,7 +7,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: grey;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,4 +19,29 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.counter {
+  margin-top: 50px;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+button {
+  margin-top: 20px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 50px;
+  font-size: 25px;
+  color: red;
+  font-weight: 600;
+}
+
+hr {
+  border: 3px dotted red;
+  margin: 50px;
+}
+
+.klikData {
+  margin: 50px;
 }

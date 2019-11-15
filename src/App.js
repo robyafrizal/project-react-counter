@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import "./App.css";
+import Greeting from "./components/greeting";
+import ImageAlbum from "./components/imageAlbum";
+import MyButton from "./components/counter";
+import namaBebas from "./assets/logos/image1.jpeg"; //import image
+import StateClass from "./components/stateClass";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <fragment>
+      <div className="App">
+        <Greeting name="Roby Afrizal Palmendha" /> {/*  Ini adalah Komponen */}
+        <ImageAlbum imageKu={namaBebas} />
+      </div>
+      <center className="counter">
+        <MyButton />
+      </center>
+      <center>
+        <hr />
+        <StateClass />
+      </center>
+    </fragment>
   );
 }
 
